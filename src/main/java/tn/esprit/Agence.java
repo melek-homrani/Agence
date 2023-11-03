@@ -70,7 +70,7 @@ public class Agence {
     }
 
     public Map<Client, ListVoitures> triNomCroissant() {
-        Map<Client, ListVoitures> sortedMap = new TreeMap<>(Comparator.comparing(Client::getNom)        );
+        Map<Client, ListVoitures> sortedMap = new TreeMap<>(Comparator.comparing(Client::getNom));
         sortedMap.putAll(ClientVoitureLoue);
         return sortedMap;
     }
